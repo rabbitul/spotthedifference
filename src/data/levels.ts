@@ -7,6 +7,7 @@ import { Level5Original, Level5Modified } from '../scenes/Level5Scene';
 import { Level6Original, Level6Modified } from '../scenes/Level6Scene';
 import { Level7Original, Level7Modified } from '../scenes/Level7Scene';
 import { Level8Original, Level8Modified } from '../scenes/Level8Scene';
+import { Level9Original, Level9Modified } from '../scenes/Level9Scene';
 
 export const LEVELS: Level[] = [
   {
@@ -189,6 +190,27 @@ export const LEVELS: Level[] = [
       // D2: White curved line on pitch removed
       // img center (588, 1541) → svg_x=588*0.3-50=126, svg_y=1541*0.3=462
       { id: 'l8-d2', cx: 126 / 800, cy: 462 / 600, r: 0.08, label: 'Pitch line' },
+    ],
+  },
+  {
+    id: 9,
+    title: 'Stadium Match',
+    description: 'Real photo! Find 3 differences in this night stadium scene.',
+    category: 'sports',
+    difficulty: 'Hard',
+    emoji: '🏟️',
+    popular: true,
+    timeLimit: 180,
+    maxHints: 3,
+    OriginalScene: Level9Original,
+    ModifiedScene: Level9Modified,
+    differences: [
+      // D1: Player with green boots removed — img (727,1677) → svg_x=727*0.2754-129.1=71, svg_y=1677*0.2754=462
+      { id: 'l9-d1', cx: 71  / 800, cy: 462 / 600, r: 0.08, label: 'Player disappeared' },
+      // D2: Person removed center-right — img (2246,1577) → svg_x=2246*0.2754-129.1=489, svg_y=1577*0.2754=434
+      { id: 'l9-d2', cx: 489 / 800, cy: 434 / 600, r: 0.08, label: 'Person disappeared' },
+      // D3: Pitch marking removed — img (1184,1826) → svg_x=1184*0.2754-129.1=197, svg_y=1826*0.2754=503
+      { id: 'l9-d3', cx: 197 / 800, cy: 503 / 600, r: 0.07, label: 'Pitch marking' },
     ],
   },
 ];
