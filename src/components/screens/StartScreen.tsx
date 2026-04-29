@@ -56,7 +56,7 @@ export function StartScreen({ onStart }: Props) {
                   <span className="popular-card__title">{level.title}</span>
                   <div className="popular-card__meta">
                     <span className={`badge ${DIFF_COLORS[level.difficulty]}`}>{level.difficulty}</span>
-                    <span className="meta-text">5 differences</span>
+                    <span className="meta-text">{level.differences.length} differences</span>
                   </div>
                   {score > 0 && <span className="popular-card__score">⭐ {score} pts</span>}
                 </div>
@@ -113,7 +113,7 @@ export function StartScreen({ onStart }: Props) {
                 <p className="level-card__desc">{level.description}</p>
                 <div className="level-card__meta">
                   <span className="meta-text">⏱ 3 min</span>
-                  <span className="meta-text">🎯 5 diffs</span>
+                  <span className="meta-text">🎯 {level.differences.length} diffs</span>
                   <span className="meta-text">💡 3 hints</span>
                 </div>
                 {score > 0 && <div className="level-card__score">⭐ Best: {score} pts</div>}

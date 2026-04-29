@@ -6,6 +6,7 @@ import { Level4Original, Level4Modified } from '../scenes/Level4Scene';
 import { Level5Original, Level5Modified } from '../scenes/Level5Scene';
 import { Level6Original, Level6Modified } from '../scenes/Level6Scene';
 import { Level7Original, Level7Modified } from '../scenes/Level7Scene';
+import { Level8Original, Level8Modified } from '../scenes/Level8Scene';
 
 export const LEVELS: Level[] = [
   {
@@ -167,6 +168,27 @@ export const LEVELS: Level[] = [
       { id: 'l7-d4', cx: 0.281, cy: 0.384, r: 0.09,  label: 'Advertising board' },
       // D5: Pitch center logo pink     — image(1930,1070)→ svg(402,295)
       { id: 'l7-d5', cx: 0.503, cy: 0.491, r: 0.10,  label: 'Pitch logo' },
+    ],
+  },
+  {
+    id: 8,
+    title: 'Football Match',
+    description: 'Real photo! Spot 2 differences in this live football match.',
+    category: 'sports',
+    difficulty: 'Hard',
+    emoji: '⚽',
+    popular: true,
+    timeLimit: 180,
+    maxHints: 2,
+    OriginalScene: Level8Original,
+    ModifiedScene: Level8Modified,
+    differences: [
+      // D1: Person sitting on sideline disappeared
+      // img center (657, 624) → svg_x=657*0.3-50=147, svg_y=624*0.3=187
+      { id: 'l8-d1', cx: 147 / 800, cy: 187 / 600, r: 0.09, label: 'Person on sideline' },
+      // D2: White curved line on pitch removed
+      // img center (588, 1541) → svg_x=588*0.3-50=126, svg_y=1541*0.3=462
+      { id: 'l8-d2', cx: 126 / 800, cy: 462 / 600, r: 0.08, label: 'Pitch line' },
     ],
   },
 ];
