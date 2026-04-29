@@ -160,15 +160,15 @@ export const LEVELS: Level[] = [
     ModifiedScene: Level7Modified,
     differences: [
       // D1: Roof LED ring blue→orange  — image(1921,135) → svg(400,37)
-      { id: 'l7-d1', cx: 0.500, cy: 0.062, r: 0.12,  label: 'LED ring color' },
+      { id: 'l7-d1', cx: 0.500, cy: 0.062, r: 0.07,  label: 'LED ring color' },
       // D2: Scoreboard warm/pink tint  — image(2375,272) → svg(525,75)
-      { id: 'l7-d2', cx: 0.656, cy: 0.125, r: 0.11,  label: 'Scoreboard color' },
+      { id: 'l7-d2', cx: 0.656, cy: 0.125, r: 0.06,  label: 'Scoreboard color' },
       // D3: Left stands cyan tint      — image(860,600)  → svg(108,165)
-      { id: 'l7-d3', cx: 0.135, cy: 0.275, r: 0.10,  label: 'Stands section' },
+      { id: 'l7-d3', cx: 0.135, cy: 0.275, r: 0.06,  label: 'Stands section' },
       // D4: Ad board yellow            — image(1285,837) → svg(225,231)
-      { id: 'l7-d4', cx: 0.281, cy: 0.384, r: 0.09,  label: 'Advertising board' },
+      { id: 'l7-d4', cx: 0.281, cy: 0.384, r: 0.06,  label: 'Advertising board' },
       // D5: Pitch center logo pink     — image(1930,1070)→ svg(402,295)
-      { id: 'l7-d5', cx: 0.503, cy: 0.491, r: 0.10,  label: 'Pitch logo' },
+      { id: 'l7-d5', cx: 0.503, cy: 0.491, r: 0.06,  label: 'Pitch logo' },
     ],
   },
   {
@@ -186,10 +186,10 @@ export const LEVELS: Level[] = [
     differences: [
       // D1: Person sitting on sideline disappeared
       // img center (657, 624) → svg_x=657*0.3-50=147, svg_y=624*0.3=187
-      { id: 'l8-d1', cx: 147 / 800, cy: 187 / 600, r: 0.09, label: 'Person on sideline' },
+      { id: 'l8-d1', cx: 147 / 800, cy: 187 / 600, r: 0.05, label: 'Person on sideline' },
       // D2: White curved line on pitch removed
       // img center (588, 1541) → svg_x=588*0.3-50=126, svg_y=1541*0.3=462
-      { id: 'l8-d2', cx: 126 / 800, cy: 462 / 600, r: 0.08, label: 'Pitch line' },
+      { id: 'l8-d2', cx: 126 / 800, cy: 462 / 600, r: 0.05, label: 'Pitch line' },
     ],
   },
   {
@@ -206,11 +206,11 @@ export const LEVELS: Level[] = [
     ModifiedScene: Level9Modified,
     differences: [
       // D1: Player with green boots removed — img (727,1677) → svg_x=727*0.2754-129.1=71, svg_y=1677*0.2754=462
-      { id: 'l9-d1', cx: 71  / 800, cy: 462 / 600, r: 0.08, label: 'Player disappeared' },
+      { id: 'l9-d1', cx: 71  / 800, cy: 462 / 600, r: 0.05, label: 'Player disappeared' },
       // D2: Person removed center-right — img (2246,1577) → svg_x=2246*0.2754-129.1=489, svg_y=1577*0.2754=434
-      { id: 'l9-d2', cx: 489 / 800, cy: 434 / 600, r: 0.08, label: 'Person disappeared' },
+      { id: 'l9-d2', cx: 489 / 800, cy: 434 / 600, r: 0.05, label: 'Person disappeared' },
       // D3: Pitch marking removed — img (1184,1826) → svg_x=1184*0.2754-129.1=197, svg_y=1826*0.2754=503
-      { id: 'l9-d3', cx: 197 / 800, cy: 503 / 600, r: 0.07, label: 'Pitch marking' },
+      { id: 'l9-d3', cx: 197 / 800, cy: 503 / 600, r: 0.05, label: 'Pitch marking' },
     ],
   },
 ];

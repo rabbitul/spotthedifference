@@ -80,7 +80,9 @@ cx = svg_x / 800      # normalized 0–1
 cy = svg_y / 600      # normalized 0–1
 ```
 
-Use `r = 0.08` for medium objects, `r = 0.10` for large areas, `r = 0.06` for tiny elements.
+Use `r = 0.05` as default for real photos (≈40px radius in SVG — precise but still clickable).
+Use `r = 0.06` for larger modified areas (color fills, big objects).
+Avoid going above `r = 0.07` for photo levels — it feels too generous.
 
 ### Step 4 – Determine next level ID
 Read `src/data/levels.ts` and find the highest existing `id`. New level = that + 1 (call it `N`).
