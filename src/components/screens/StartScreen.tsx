@@ -41,7 +41,7 @@ export function StartScreen({ onStart }: Props) {
           <span className="section__heading-icon">🔥</span> Most Popular
         </h2>
         <div className="popular-grid">
-          {popularLevels.map((level, i) => {
+          {popularLevels.map((level) => {
             const globalIndex = LEVELS.indexOf(level);
             const score = scores[globalIndex] ?? 0;
             return (
