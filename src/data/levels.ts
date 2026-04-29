@@ -5,6 +5,7 @@ import { Level3Original, Level3Modified } from '../scenes/Level3Scene';
 import { Level4Original, Level4Modified } from '../scenes/Level4Scene';
 import { Level5Original, Level5Modified } from '../scenes/Level5Scene';
 import { Level6Original, Level6Modified } from '../scenes/Level6Scene';
+import { Level7Original, Level7Modified } from '../scenes/Level7Scene';
 
 export const LEVELS: Level[] = [
   {
@@ -141,6 +142,31 @@ export const LEVELS: Level[] = [
       { id: 'l6-d4', cx: 400 / 800, cy: 450 / 600, r: 0.11,  label: 'Court surface color' },
       // Towel rect x=728,y=326,w=44,h=16 → center (750,334)
       { id: 'l6-d5', cx: 750 / 800, cy: 334 / 600, r: 0.075, label: 'Towel color' },
+    ],
+  },
+  {
+    id: 7,
+    title: 'Stadium Night',
+    description: 'Real photo! Find 5 differences in this packed football stadium.',
+    category: 'sports',
+    difficulty: 'Hard',
+    emoji: '🏟️',
+    popular: true,
+    timeLimit: 210,
+    maxHints: 3,
+    OriginalScene: Level7Original,
+    ModifiedScene: Level7Modified,
+    differences: [
+      // D1: Roof LED ring blue→orange  — image(1921,135) → svg(400,37)
+      { id: 'l7-d1', cx: 0.500, cy: 0.062, r: 0.12,  label: 'LED ring color' },
+      // D2: Scoreboard warm/pink tint  — image(2375,272) → svg(525,75)
+      { id: 'l7-d2', cx: 0.656, cy: 0.125, r: 0.11,  label: 'Scoreboard color' },
+      // D3: Left stands cyan tint      — image(860,600)  → svg(108,165)
+      { id: 'l7-d3', cx: 0.135, cy: 0.275, r: 0.10,  label: 'Stands section' },
+      // D4: Ad board yellow            — image(1285,837) → svg(225,231)
+      { id: 'l7-d4', cx: 0.281, cy: 0.384, r: 0.09,  label: 'Advertising board' },
+      // D5: Pitch center logo pink     — image(1930,1070)→ svg(402,295)
+      { id: 'l7-d5', cx: 0.503, cy: 0.491, r: 0.10,  label: 'Pitch logo' },
     ],
   },
 ];
